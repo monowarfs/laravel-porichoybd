@@ -1,18 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "monowarfs/porichoybd",
+    "description": "Laravel package for porichoybd.gov.bd APIs implementation.",
     "keywords": [
-        ":vendor_name",
+        "monowarfs",
         "laravel",
-        ":package_slug"
+        "porichoybd"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/monowarfs/laravel-porichoybd",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
+            "name": "Monowar Hossain",
+            "email": "monowar@executorsinc.com"
         }
     ],
     "require": {
@@ -34,13 +33,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Monowarfs\\PorichoyBD\\": "src",
+            "Monowarfs\\PorichoyBD\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Monowarfs\\PorichoyBD\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +53,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Monowarfs\\PorichoyBD\\PorichoyBDServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "PorichoyBD": "Monowarfs\\PorichoyBD\\Facades\\PorichoyBD"
             }
         }
     },
