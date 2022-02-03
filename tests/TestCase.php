@@ -3,8 +3,8 @@
 namespace Monowarfs\PorichoyBD\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Monowarfs\PorichoyBD\PorichoyBDServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
