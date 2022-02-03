@@ -13,7 +13,7 @@ class PorichoyBD
         $this->httpCaller = new HttpCaller();
     }
 
-    public function basic(array $payload)
+    public function basic($payload)
     {
         if(config('porichoybd.is_live') == false )
         {

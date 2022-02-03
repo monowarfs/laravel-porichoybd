@@ -23,7 +23,6 @@ You can publish and run the migrations with:
 
 ```bash
 php artisan vendor:publish --tag="porichoybd-migrations"
-php artisan migrate
 ```
 
 You can publish the config file with:
@@ -36,20 +35,39 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'is_live' => env('PORICHOY_GOV_BD_SERVICE_PROD', false),
+    'api'=> [
+        'key' => env('PORICHOY_GOV_BD_API_KEY', ''),
+        'endpoints' =>[
+            'live' => [
+                'basic' => 'https://api.porichoybd.com/api/Kyc/nid-person-values',
+                'basic_n_photo' => 'https://api.porichoybd.com/api/kyc/nid-person',
+                'basic_n_signature' => 'https://api.porichoybd.com/api/kyc/nid-person',
+                'autofill' => 'https://api.porichoybd.com/api/kyc/nid-person-values',
+                'fatchmatch' => 'https://api.porichoybd.com/api/kyc/nid-person-values-image-match',
+                'birth_registration' => 'https://api.porichoybd.com/api/kyc/verify-birth-registration'
+            ],
+            'test' => [
+                'basic' => 'https://api.porichoybd.com/api/kyc/test-nid-person',
+                'basic_n_photo' => 'https://api.porichoybd.com/api/kyc/test-nid-person',
+                'basic_n_signature' => 'https://api.porichoybd.com/api/kyc/test-nid-person',
+                'autofill' => 'https://api.porichoybd.com/api/kyc/test-nid-person-values',
+                'fatchmatch' => 'https://api.porichoybd.com/api/kyc/test-nid-person-values-image-match',
+            ]
+        ]
+    ],
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="porichoybd-views"
-```
 
 ## Usage
 
 ```php
 $porichoy = new Monowarfs\PorichoyBD();
-echo $porichoy->echoPhrase('Hello, Monowarfs!');
+echo $porichoy->basic('{
+"person_dob": "YYYY-MM-DD",
+"national_id": "XXXXXXXXXX",
+}');
 ```
 
 ## Testing
