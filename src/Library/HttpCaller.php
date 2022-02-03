@@ -21,6 +21,7 @@ class HttpCaller implements Caller
     public function setHeader($key, $value)
     {
         $this->headers[$key] = $value;
+
         return $this;
     }
 
@@ -28,6 +29,7 @@ class HttpCaller implements Caller
     {
         $locale = app()->getLocale() ?? 'en';
         $this->setHeader('Content-Language', $locale);
+
         return $this->headers;
     }
 
