@@ -19,12 +19,6 @@ You can install the package via composer:
 composer require monowarfs/porichoybd
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="porichoybd-migrations"
-```
-
 You can publish the config file with:
 
 ```bash
