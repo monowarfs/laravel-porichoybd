@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Monowarfs\Library;
+namespace Monowarfs\PorichoyBD\Library;
 
 interface Caller
 {

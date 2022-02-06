@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Monowarfs\Library;
+namespace Monowarfs\PorichoyBD\Library;
 
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
