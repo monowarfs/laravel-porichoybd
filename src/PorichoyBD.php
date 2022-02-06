@@ -2,7 +2,7 @@
 
 namespace Monowarfs\PorichoyBD;
 
-use Monowarfs\Library\HttpCaller;
+use Monowarfs\PorichoyBD\Library\HttpCaller;
 
 class PorichoyBD
 {
