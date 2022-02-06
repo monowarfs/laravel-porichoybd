@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Monowarfs\PorichoyBD\Library;
 
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 
 class HttpCaller implements Caller
 {
@@ -40,9 +39,6 @@ class HttpCaller implements Caller
             ])
             ->post($url, $payload);
 
-        Log::info($response->body());
-
-
         if ($response->failed()) {
             $response->throw();
         }
@@ -54,8 +50,6 @@ class HttpCaller implements Caller
     {
         $response = Http::withHeaders($this->getHeader())
             ->get($url, $params);
-
-        //Log::info($response->body());
 
         if ($response->failed()) {
             $response->throw();

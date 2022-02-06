@@ -1,9 +1,8 @@
 # Laravel package for porichoybd.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/monowarfs/laravel-porichoybd.svg?style=flat-square)](https://packagist.org/packages/monowarfs/laravel-porichoybd)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/monowarfs/laravel-porichoybd/run-tests?label=tests)](https://github.com/monowarfs/laravel-porichoybd/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/monowarfs/laravel-porichoybd/Check%20&%20fix%20styling?label=code%20style)](https://github.com/monowarfs/laravel-porichoybd/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/monowarfs/laravel-porichoybd.svg?style=flat-square)](https://packagist.org/packages/monowarfs/laravel-porichoybd)
+[![Total Downloads](https://img.shields.io/packagist/dt/monowarfs/porichoybd.svg?style=flat-square)](https://packagist.org/packages/monowarfs/porichoybd)
 
 Laravel package for porichoybd.gov.bd APIs implementation.
 
